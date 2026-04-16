@@ -1,0 +1,33 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* İstenmeyen kaydırma çubuklarını engeller */
+  background-color: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box; /* Padding ve border'ların genişliği bozmasını engeller */
+}
+
+:root {
+  color-scheme: dark; /* İşletim sisteminin form elemanlarını siyaha zorlar */
+}
+
+/* Ayrıca select kutularının siyah kalmasını garanti altına alalım */
+select {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+input, select, button {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Seçim kutularının (dropdown) içindeki listeyi zorla karanlık yap */
+select option {
+  background-color: #252526;
+  color: white;
+}
